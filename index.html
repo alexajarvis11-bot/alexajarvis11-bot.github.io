@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexa Jarvis — Portfolio</title>
+  <meta name="description" content="Portfolio of Alexa Jarvis: projects, experience, and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">AJ</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO: change your name, role, and one-line pitch -->
+    <section class="hero container">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Alexa Jarvis</h1>
+      <p class="lede">An <strong>explorer</strong> who finds Earth interesting. Currently based on <strong>Earth</strong>.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">About me</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="avatar" aria-hidden="true">AJ</div>
+        <div>
+          <p>Earth is interesting.</p>
+          <p><strong>Hobbies:</strong> Abstract. Can't tell you here. Ha ha.</p>
+          <ul class="skills">
+            <li>📍 Earth</li>
+            <li>Exploring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS: duplicate an <article class="card interest"> block to add one -->
+    <section id="interests" class="section container">
+      <h2>My interests</h2>
+      <div class="cards">
+        <article class="card interest">
+          <div class="card-body">
+            <span class="interest-icon" aria-hidden="true">⚛️</span>
+            <h3>Physics</h3>
+            <p>I believe in reality.</p>
+          </div>
+        </article>
+        <article class="card interest">
+          <div class="card-body">
+            <span class="interest-icon" aria-hidden="true">🌀</span>
+            <h3>Metaphysics</h3>
+            <p>Because I don't believe in one real perspective of physics.</p>
+          </div>
+        </article>
+        <article class="card interest">
+          <div class="card-body">
+            <span class="interest-icon" aria-hidden="true">⚖️</span>
+            <h3>Economics</h3>
+            <p>For the utilization of availability and scarcity.</p>
+          </div>
+        </article>
+        <article class="card interest">
+          <div class="card-body">
+            <span class="interest-icon" aria-hidden="true">🧬</span>
+            <h3>Biology</h3>
+            <p>I want to explore consciousness and coding of living organisms.</p>
+          </div>
+        </article>
+        <article class="card interest interest-secret">
+          <div class="card-body">
+            <span class="interest-icon" aria-hidden="true">🤫</span>
+            <h3>Last One</h3>
+            <p>Obviously I won't tell you here. Ha ha.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">Now</span>
+          <div><h3>Explorer · Earth</h3><p>Still exploring Earth.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact">
+      <h2>Let's talk</h2>
+      <p>Have a project in mind or just want to say hi? My inbox is open.</p>
+      <a class="btn btn-primary" href="mailto:alexajarvis11@gmail.com">alexajarvis11@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/alexajarvis11-bot" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Alexa Jarvis</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
