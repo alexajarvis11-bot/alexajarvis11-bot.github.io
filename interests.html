@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interests — Alexa Jarvis</title>
+  <meta name="description" content="Alexa Jarvis's classified alien research activities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="alien-page">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">AJ</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html" aria-current="page">Interests</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="space-hero container">
+      <div>
+        <p class="eyebrow">Interests · Research division</p>
+        <h1>Classified research activities</h1>
+        <p class="lede">Official cover story: "hobbies." Real purpose: gathering intelligence on Earth, one fascinating subject at a time.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- UFO with tractor beam -->
+        <svg viewBox="0 0 200 200">
+          <circle cx="30" cy="30" r="2.5" fill="var(--ochre)" class="blink"/>
+          <circle cx="172" cy="26" r="2" fill="var(--moss)" class="blink"/>
+          <circle cx="182" cy="120" r="2.5" fill="var(--clay)" class="blink"/>
+          <path d="M80 106 L120 106 L156 186 L44 186 Z" fill="var(--ochre)" opacity=".18"/>
+          <path d="M70 92 A30 28 0 0 1 130 92 Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3"/>
+          <circle cx="100" cy="80" r="9" fill="var(--moss)"/>
+          <ellipse cx="96.5" cy="79" rx="2" ry="3" fill="var(--surface)"/>
+          <ellipse cx="103.5" cy="79" rx="2" ry="3" fill="var(--surface)"/>
+          <ellipse cx="100" cy="100" rx="64" ry="16" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+          <circle cx="62" cy="101" r="4" fill="var(--clay)" class="blink"/>
+          <circle cx="82" cy="105" r="4" fill="var(--ochre)" class="blink"/>
+          <circle cx="100" cy="106" r="4" fill="var(--clay)" class="blink"/>
+          <circle cx="118" cy="105" r="4" fill="var(--ochre)" class="blink"/>
+          <circle cx="138" cy="101" r="4" fill="var(--clay)" class="blink"/>
+          <!-- a cow, obviously -->
+          <text x="100" y="172" text-anchor="middle" font-size="22">🐄</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PRIMARY RESEARCH FIELDS (Alexa's own interests) -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Primary research fields</h2>
+        <span class="tag">Files 001–005</span>
+      </div>
+      <p class="section-intro">The serious stuff. The reasons I came to Earth in the first place. Click a file to open the field notes.</p>
+
+      <!-- EDIT: copy one <article> block to add a research file. Change --tone to var(--moss), var(--clay), var(--ochre), var(--bark) or var(--stone). -->
+      <div class="grid-3">
+        <article class="glow-card research-card" style="--tone: var(--moss)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">⚛️</span><span class="file-no">FILE 001</span></div>
+          <h3>Physics</h3>
+          <p class="subtitle">Reality Calibration</p>
+          <p>I believe in reality.</p>
+          <details><summary>Field notes</summary><p>Still testing whether gravity is a law or just a very strong suggestion.</p></details>
+          <p class="status"><span class="dot"></span>Ongoing study</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--clay)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🌀</span><span class="file-no">FILE 002</span></div>
+          <h3>Metaphysics</h3>
+          <p class="subtitle">Perspective Experiments</p>
+          <p>Because I don't believe in one real perspective of physics.</p>
+          <details><summary>Field notes</summary><p>Current estimate: at least eleven versions of "real." Possibly more on Tuesdays.</p></details>
+          <p class="status"><span class="dot"></span>Ongoing study</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--ochre)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">⚖️</span><span class="file-no">FILE 003</span></div>
+          <h3>Economics</h3>
+          <p class="subtitle">Resource Logistics</p>
+          <p>For the utilization of availability and scarcity.</p>
+          <details><summary>Field notes</summary><p>Humans trade small pieces of paper for snacks. Fascinating system. Highly recommend.</p></details>
+          <p class="status"><span class="dot"></span>Ongoing study</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--bark)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🧬</span><span class="file-no">FILE 004</span></div>
+          <h3>Biology</h3>
+          <p class="subtitle">Lifeform Source Code</p>
+          <p>I want to explore consciousness and coding of living organisms.</p>
+          <details><summary>Field notes</summary><p>Goal: read the source code of every living thing. Starting with houseplants.</p></details>
+          <p class="status"><span class="dot"></span>Ongoing study</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--stone)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🤫</span><span class="file-no">FILE 005</span></div>
+          <h3>Last One</h3>
+          <p class="subtitle">Clearance level: ∞</p>
+          <p>Obviously I won't tell you here. Ha ha.</p>
+          <details><summary>Field notes</summary><p><span class="redacted" tabindex="0">Nice try, Earthling.</span> <span class="redacted" tabindex="0">Still classified.</span></p></details>
+          <p class="status"><span class="dot"></span>Redacted</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FIELD OPERATIONS (fun hobbies) -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Field operations</h2>
+        <span class="tag">Undercover activities</span>
+      </div>
+      <p class="section-intro">What humans see: hobbies. What's actually happening: very important research.</p>
+
+      <!-- EDIT: replace these with your real hobbies whenever you like. -->
+      <div class="grid-3">
+        <article class="glow-card research-card" style="--tone: var(--moss)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🌐</span><span class="file-no">OP-01</span></div>
+          <h3>Exploring the Internet</h3>
+          <p class="subtitle">Signal Mapping</p>
+          <p>Scanning the human information network, one rabbit hole at a time.</p>
+          <details><summary>Field notes</summary><p>Personal record: 47 open tabs before the browser begged for mercy.</p></details>
+          <p class="status"><span class="dot"></span>Active</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--clay)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🎮</span><span class="file-no">OP-02</span></div>
+          <h3>Gaming</h3>
+          <p class="subtitle">Virtual Combat Training</p>
+          <p>Preparing for intergalactic missions in completely safe, simulated worlds.</p>
+          <details><summary>Field notes</summary><p>Win rate: classified. Rage-quit rate: also classified.</p></details>
+          <p class="status"><span class="dot"></span>Active</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--ochre)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🎧</span><span class="file-no">OP-03</span></div>
+          <h3>Music</h3>
+          <p class="subtitle">Frequency Experiments</p>
+          <p>Analyzing the sound waves that make humans dance, cry, or both at once.</p>
+          <details><summary>Field notes</summary><p>Some frequencies cause spontaneous head-nodding. Under investigation.</p></details>
+          <p class="status"><span class="dot"></span>Active</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--bark)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🤖</span><span class="file-no">OP-04</span></div>
+          <h3>Technology</h3>
+          <p class="subtitle">Studying Human Intelligence</p>
+          <p>Watching humans build machines that are slowly getting smarter than they are.</p>
+          <details><summary>Field notes</summary><p>Still unclear who is training whom.</p></details>
+          <p class="status"><span class="dot"></span>Active</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--stone)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🎬</span><span class="file-no">OP-05</span></div>
+          <h3>Movies</h3>
+          <p class="subtitle">Earth Documentary Collection</p>
+          <p>Watching documentaries about Earth. Humans insist on calling them "movies."</p>
+          <details><summary>Field notes</summary><p>Concern: a suspicious number of them are about humans fighting aliens. Rude.</p></details>
+          <p class="status"><span class="dot"></span>Active</p>
+        </article>
+        <article class="glow-card research-card" style="--tone: var(--moss)">
+          <div class="research-top"><span class="research-icon" aria-hidden="true">🧳</span><span class="file-no">OP-06</span></div>
+          <h3>Travelling</h3>
+          <p class="subtitle">Planetary Exploration</p>
+          <p>Surveying Earth's surface one destination at a time. For science.</p>
+          <details><summary>Field notes</summary><p>Next destination: classified. Snacks for the journey: confirmed.</p></details>
+          <p class="status"><span class="dot"></span>Active</p>
+        </article>
+      </div>
+      <a href="experience.html" class="next-link">Next: Mission log →</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Alexa Jarvis</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

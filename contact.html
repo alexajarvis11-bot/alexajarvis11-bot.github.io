@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Alexa Jarvis</title>
+  <meta name="description" content="Need to contact an extraterrestrial? Send Alexa Jarvis a transmission.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="alien-page">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">AJ</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="space-hero container">
+      <div>
+        <p class="eyebrow">Contact · Open channel</p>
+        <h1>Need to contact an extraterrestrial?</h1>
+        <p class="lede">Earth's communication systems are surprisingly advanced. Send a transmission and I'll try to respond before my spaceship leaves.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- Satellite dish sending signals -->
+        <svg viewBox="0 0 200 200">
+          <circle cx="30" cy="36" r="2.5" fill="var(--ochre)" class="blink"/>
+          <circle cx="40" cy="150" r="2" fill="var(--moss)" class="blink"/>
+          <path class="signal" d="M138 48 A18 18 0 0 1 152 62" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+          <path class="signal s2" d="M142 30 A36 36 0 0 1 170 58" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+          <path class="signal s3" d="M146 12 A54 54 0 0 1 188 54" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+          <line x1="84" y1="126" x2="70" y2="176" stroke="var(--bark)" stroke-width="5" stroke-linecap="round"/>
+          <line x1="44" y1="178" x2="104" y2="178" stroke="var(--bark)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M48 68 A60 60 0 0 0 132 152 Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3" stroke-linejoin="round"/>
+          <line x1="90" y1="110" x2="124" y2="76" stroke="var(--accent)" stroke-width="3"/>
+          <circle cx="126" cy="74" r="6" fill="var(--clay)"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="contact-grid">
+        <!-- TRANSMISSION FORM -->
+        <div class="glow-card">
+          <div class="section-head" style="margin-bottom:18px">
+            <h2 style="font-size:1.6rem">Send a transmission</h2>
+            <span class="tag">Channel open</span>
+          </div>
+
+          <!-- EDIT: data-to is the email address the form writes to -->
+          <form id="transmission" data-to="alexajarvis11@gmail.com" novalidate>
+            <div class="field">
+              <label for="name">Your Earth name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="e.g. Sam">
+            </div>
+            <div class="field">
+              <label for="email">Your email <span>(return frequency)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" required placeholder="Greetings, alien. I come in peace…"></textarea>
+            </div>
+            <p class="form-note">📝 <strong>Heads up:</strong> this website has no server, so the form can't send anything by itself. The button opens <em>your</em> email app with your message already filled in, and you hit send from there.</p>
+            <button class="btn btn-primary beam-btn" type="submit"><span class="beam-icon" aria-hidden="true">🛸</span> Beam it up</button>
+          </form>
+
+          <div id="transmissionSent" class="sent" hidden aria-live="polite">
+            <span class="sent-ufo" aria-hidden="true">🛸</span>
+            <h3>Transmission ready for launch!</h3>
+            <p>Your email app should now be open with your message inside. Press send there to beam it to my spaceship. If nothing opened, write to me directly at <a href="mailto:alexajarvis11@gmail.com">alexajarvis11@gmail.com</a>.</p>
+            <button class="btn btn-ghost" id="sendAnother" type="button">Send another transmission</button>
+          </div>
+        </div>
+
+        <!-- DIRECT CHANNELS -->
+        <aside class="glow-card">
+          <span class="tag">Direct frequencies</span>
+          <!-- EDIT: copy an <li> to add another social link -->
+          <ul class="channels">
+            <li>
+              <a href="mailto:alexajarvis11@gmail.com">
+                <span class="channel-icon" aria-hidden="true">✉️</span>
+                <span><small>Email</small><strong>alexajarvis11@gmail.com</strong></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/alexajarvis11-bot" target="_blank" rel="noopener">
+                <span class="channel-icon" aria-hidden="true">💻</span>
+                <span><small>GitHub</small><strong>alexajarvis11-bot</strong></span>
+              </a>
+            </li>
+          </ul>
+          <p class="response-time">⏱️ <strong>Response time:</strong> usually before my spaceship leaves. Usually.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Alexa Jarvis</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

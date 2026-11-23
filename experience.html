@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience — Alexa Jarvis</title>
+  <meta name="description" content="Mission log: Alexa Jarvis's journey through human civilization.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="alien-page">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">AJ</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="experience.html" aria-current="page">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="space-hero container">
+      <div>
+        <p class="eyebrow">Experience · Mission log</p>
+        <h1>My journey through human civilization</h1>
+        <p class="lede">Every training, skill and project collected while living undercover on Earth. Some entries are still being decrypted.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <!-- Rocket on an orbit -->
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="var(--border)" stroke-width="2" stroke-dasharray="4 8"/>
+          <circle cx="26" cy="40" r="2.5" fill="var(--ochre)" class="blink"/>
+          <circle cx="178" cy="150" r="2" fill="var(--moss)" class="blink"/>
+          <circle cx="40" cy="168" r="6" fill="var(--clay)" opacity=".5"/>
+          <g transform="rotate(35 100 100)">
+            <path class="flicker" d="M88 132 Q100 172 112 132 Z" fill="var(--ochre)"/>
+            <path d="M100 28 C122 48 128 82 122 132 L78 132 C72 82 78 48 100 28 Z" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+            <circle cx="100" cy="74" r="12" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="3"/>
+            <path d="M78 104 L60 132 L80 128 Z" fill="var(--clay)"/>
+            <path d="M122 104 L140 132 L120 128 Z" fill="var(--clay)"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- MISSION LOG
+         EDIT: replace everything in [brackets] with your real information.
+         Copy one <li class="glow-card log-entry"> block to add another entry,
+         or delete one you don't need. -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Mission log</h2>
+        <span class="tag">Oldest → newest</span>
+      </div>
+      <ol class="mission-log">
+        <li class="glow-card log-entry" style="--tone: var(--stone)">
+          <div class="log-head"><span class="tag">Log 001 · Education</span><span class="log-meta"><span class="ph">[Start year – End year]</span></span></div>
+          <h3>Earth Survival Training</h3>
+          <p class="role"><span class="ph">[School / college / course name]</span></p>
+          <p>Learned how humans pass on knowledge: classrooms, homework, and the ancient ritual of the group project. Focus: <span class="ph">[what you studied]</span></p>
+        </li>
+        <li class="glow-card log-entry" style="--tone: var(--bark)">
+          <div class="log-head"><span class="tag">Log 002 · Languages</span><span class="log-meta">Ongoing</span></div>
+          <h3>Human Language Acquisition</h3>
+          <p class="role"><span class="ph">[Languages you speak]</span></p>
+          <p>Successfully decoded several human languages. Still working on sarcasm, emojis and "we should hang out sometime."</p>
+        </li>
+        <li class="glow-card log-entry" style="--tone: var(--ochre)">
+          <div class="log-head"><span class="tag">Log 003 · Projects</span><span class="log-meta"><span class="ph">[Year]</span></span></div>
+          <h3>Digital Infiltration</h3>
+          <p class="role"><span class="ph">[Project name]</span></p>
+          <p>Planted code on the human internet. What it does: <span class="ph">[short description of your project]</span></p>
+          <a class="log-link" href="https://github.com/alexajarvis11-bot" target="_blank" rel="noopener">View my transmissions on GitHub →</a>
+        </li>
+        <li class="glow-card log-entry" style="--tone: var(--clay)">
+          <div class="log-head"><span class="tag">Log 004 · Work</span><span class="log-meta"><span class="ph">[Start – End]</span></span></div>
+          <h3>Professional Disguise Development</h3>
+          <p class="role"><span class="ph">[Job title]</span> · <span class="ph">[Company / organization]</span></p>
+          <p>Infiltrated the human workforce. Learned to say "per my last email." Duties: <span class="ph">[what you did there]</span></p>
+        </li>
+        <li class="glow-card log-entry" style="--tone: var(--ochre)">
+          <div class="log-head"><span class="tag">Log 005 · Achievements</span><span class="log-meta"><span class="ph">[Year]</span></span></div>
+          <h3>Mission Achievements</h3>
+          <p class="role"><span class="ph">[Award, certificate or milestone]</span></p>
+          <p>A moment of glory, reported straight to headquarters: <span class="ph">[why it mattered]</span></p>
+        </li>
+        <li class="glow-card log-entry current" style="--tone: var(--moss)">
+          <div class="log-head"><span class="tag">Log 006 · Current mission</span><span class="log-meta">Now</span></div>
+          <h3>Explorer · Earth</h3>
+          <p class="role">Field researcher, undercover</p>
+          <p>Still exploring Earth.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS
+         EDIT: replace the [Skill] placeholders with your real skills. -->
+    <section class="section container">
+      <div class="section-head">
+        <h2>Abilities acquired on Earth</h2>
+        <span class="tag">Skill scan</span>
+      </div>
+      <ul class="skills">
+        <li><span class="ph">[Skill 1]</span></li>
+        <li><span class="ph">[Skill 2]</span></li>
+        <li><span class="ph">[Skill 3]</span></li>
+        <li><span class="ph">[Skill 4]</span></li>
+        <li>Saying "I'm fine" convincingly</li>
+      </ul>
+      <a href="contact.html" class="next-link">Next: Open a channel →</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Alexa Jarvis</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>
